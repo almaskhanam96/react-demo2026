@@ -1,4 +1,4 @@
-name: Angular CI Build
+name: React  Build
 on:
   push:
     branches:
@@ -22,7 +22,7 @@ jobs:
           cache: npm
 
       - name: Install all dependencies
-        run: npm ci
+        run: npm install
 
       - name: linting
         run: npm run lint
